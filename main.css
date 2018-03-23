@@ -1,0 +1,110 @@
+body {
+  padding-bottom: 60px;
+  font-family: 'Lato', sans-serif;
+  font-size: 2em;
+  font-weight: 300; }
+  body h2 {
+    font-weight: 300;
+    color: #255fbc; }
+  body h4 {
+    font-weight: 300;
+    color: #919191; }
+  body form {
+    margin-top: 30px; }
+
+.container {
+  margin-top: 50px; }
+
+.subtitle {
+  padding-bottom: 40px; }
+
+.category {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 5px;
+  padding-top: 10px;
+  transition: .3s; }
+  .category:hover {
+    background-color: #255fbc;
+    transition: .3s;
+    margin-top: -10px; }
+    .category:hover a {
+      color: #fff; }
+  .category-img-top {
+    margin-top: 10px; }
+
+.style-one {
+  background-image: url(https://assets.everest.co.uk/globalassets/everest/homepage/hp-window-pod.jpg); }
+
+.style-two {
+  background-image: url(https://assets.everest.co.uk/globalassets/everest/homepage/doorpod_jan-min.jpg); }
+
+.style-three {
+  background-image: url(https://assets.everest.co.uk/globalassets/everest/homepage/conspod_jan-min.jpg); }
+
+.parent {
+  width: 100%;
+  margin: 0;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer; }
+  .parent .cover-layer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 117, 188, 0);
+    transition: .5s; }
+  .parent .riser {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: .5s; }
+
+.child {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
+
+.parent:hover .child, .parent:hover .child {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2); }
+
+.parent:hover .riser {
+  bottom: 0;
+  transition: .5s; }
+
+.parent:hover .cover-layer {
+  background-color: rgba(42, 146, 216, 0.69);
+  transition: .5s; }
+
+label > input {
+  /* HIDE RADIO */
+  visibility: hidden;
+  /* Makes input not-clickable */
+  position: absolute;
+  /* Remove input from document flow */ }
+
+label > input + img {
+  /* IMAGE STYLES */
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 1px;
+  transition: .2s; }
+
+label > input:checked + img {
+  /* (RADIO CHECKED) IMAGE STYLES */
+  border: 2px solid #3770cc;
+  border-radius: 100%; }
+
+/*# sourceMappingURL=main.css.map */

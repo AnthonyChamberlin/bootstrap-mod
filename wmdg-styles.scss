@@ -1,0 +1,58 @@
+.style-one {background-image: url(https://assets.everest.co.uk/globalassets/everest/homepage/hp-window-pod.jpg);}
+.style-two {background-image: url(https://assets.everest.co.uk/globalassets/everest/homepage/doorpod_jan-min.jpg);}
+.style-three {background-image: url(https://assets.everest.co.uk/globalassets/everest/homepage/conspod_jan-min.jpg);}
+
+.parent {
+    width: 100%;
+    margin: 0;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+    .cover-layer {
+        position: absolute;
+        top: 0;
+        width: 100%; 
+        height: 100%;
+        background-color: rgba(37, 117, 188, 0);
+        transition: .5s;
+    }
+    
+    .riser {
+        position: absolute;
+        bottom: -30px;
+        width: 100%;
+        background-color: rgba(255,255,255,0.8);   
+        transition: .5s; 
+    }
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.parent:hover .child, .parent:hover .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.parent:hover .riser {
+    bottom: 0;
+    transition: .5s;
+}
+
+.parent:hover .cover-layer {
+    background-color: rgba(42, 146, 216, 0.69);
+    transition: .5s;
+}
