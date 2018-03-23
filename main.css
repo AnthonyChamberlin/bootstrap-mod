@@ -99,7 +99,7 @@ label > input + img {
   /* IMAGE STYLES */
   cursor: pointer;
   border: 2px solid transparent;
-  padding: 1px;
+  padding: 4px;
   transition: .2s; }
 
 label > input:checked + img {
