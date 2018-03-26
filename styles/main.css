@@ -114,34 +114,41 @@ label > input:checked + img {
   border-radius: 100%; }
 
 .external-img[value="1"] {
-  height: 200px;
   background-image: url(../images/cat-1.jpg);
-  background-size: cover;
-  border: 5px solid #fff; }
+  background-size: cover; }
 
 .external-img[value="2"] {
-  height: 200px;
   background-image: url(../images/cat-2.jpg);
-  background-size: cover;
-  border: 5px solid #fff; }
+  background-size: cover; }
 
 .external-img[value="3"] {
-  height: 400px;
   background-image: url(../images/cat-3.jpg);
-  background-size: cover;
-  border: 5px solid #fff; }
+  background-size: cover; }
 
 .external-img[value="4"] {
-  height: 200px;
   background-image: url(../images/cat-4.jpg);
-  background-size: cover;
-  border: 5px solid #fff; }
+  background-size: cover; }
 
 .external-img[value="5"] {
-  height: 200px;
   background-image: url(../images/cat-5.jpg);
-  background-size: cover;
-  border: 5px solid #fff; }
+  background-size: cover; }
+
+.parent-1 {
+  height: 200px;
+  padding: 5px !important;
+  overflow: hidden;
+  position: relative; }
+
+.external-img {
+  height: 100%; }
+
+.parent-1:hover .external-img {
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: .5s; }
 
 /* The Modal (background) */
 .modal {

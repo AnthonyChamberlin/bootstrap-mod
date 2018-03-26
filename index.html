@@ -27,38 +27,45 @@
     <div class="row">
       <div class="col-xs-8">
         <div class="row">
-          <div class="col-xs-4 external-img" value="1" onclick="openModal();currentSlide(1)"></div>
-          <div class="col-xs-8 external-img" value="2" onclick="openModal();currentSlide(2)"></div>
+          <div class="col-xs-4 parent-1">
+            <div class="external-img" value="1" onclick="openModal();currentSlide(1)"></div>
+          </div>
+          <div class="col-xs-8 parent-1">
+            <div class="external-img" value="2" onclick="openModal();currentSlide(2)"></div>
+          </div>
         </div>
         <div class="row">
-          <div class="col-xs-7 external-img" value="4" onclick="openModal();currentSlide(4)"></div>
-          <div class="col-xs-5 external-img" value="5" onclick="openModal();currentSlide(5)"></div>
+          <div class="col-xs-7 parent-1">
+            <div class="external-img" value="4" onclick="openModal();currentSlide(4)"></div>
+          </div>
+          <div class="col-xs-5 parent-1">
+            <div class="external-img" value="5" onclick="openModal();currentSlide(5)"></div>
+          </div>
         </div>
       </div>
-          <div class="col-xs-4 external-img" value="3" onclick="openModal();currentSlide(3)"></div>
+          <div class="col-xs-4 parent-1">
+            <div class="external-img" value="3" onclick="openModal();currentSlide(3)"></div>
+          </div>
     </div>
   </div>
 
   <div id="myModal" class="modal">
       <span class="close cursor" onclick="closeModal()">&times;</span>
     <div class="modal-content">
-      <div class="modal-header">
-        <h1>Modal Title</h1>
+      <div class="slides">
+        <img src="images/cat-1.jpg">
       </div>
       <div class="slides">
-        <img src="images/1.jpg">
+        <img src="images/cat-2.jpg">
       </div>
       <div class="slides">
-        <img src="images/2.jpg">
+        <img src="images/cat-3.jpg">
       </div>
       <div class="slides">
-        <img src="images/3.jpg">
+        <img src="images/cat-4.jpg">
       </div>
       <div class="slides">
-        <img src="images/4.jpg">
-      </div>
-      <div class="slides">
-        <img src="images/5.jpg">
+        <img src="images/cat-5.jpg">
       </div>
     </div>
 
