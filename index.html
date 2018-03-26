@@ -27,32 +27,43 @@
     <div class="row">
       <div class="col-xs-8">
         <div class="row">
-          <div class="col-xs-4">
-            <div class="external-img" value="1"></div>
-          </div>
-          <div class="col-xs-8">
-            <div class="external-img 2" value="2"></div>
-          </div>
+          <div class="col-xs-4 external-img" value="1" onclick="openModal();currentSlide(1)"></div>
+          <div class="col-xs-8 external-img" value="2" onclick="openModal();currentSlide(2)"></div>
         </div>
         <div class="row">
-          <div class="col-xs-7">
-            <div class="external-img" value="3"></div>
-          </div>
-          <div class="col-xs-5">
-            <div class="external-img 4" value="4"></div>
-          </div>
+          <div class="col-xs-7 external-img" value="4" onclick="openModal();currentSlide(4)"></div>
+          <div class="col-xs-5 external-img" value="5" onclick="openModal();currentSlide(5)"></div>
         </div>
       </div>
-      <div class="col-xs-4">
-        <div class="col-xs-12">
-          <div class="external-img" value="5"></div>
-        </div>
-      </div>
+          <div class="col-xs-4  external-img" value="3" onclick="openModal();currentSlide(3)"></div>
     </div>
   </div>
 
   <div id="myModal" class="modal">
-  
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1>Modal Title</h1>
+      </div>
+      <div class="slides">
+        <img src="images/1.jpg" style="width:100%;">
+      </div>
+      <div class="slides">
+        <img src="images/2.jpg" style="width:100%;">
+      </div>
+      <div class="slides">
+        <img src="images/3.jpg" style="width:100%;">
+      </div>
+      <div class="slides">
+        <img src="images/4.jpg" style="width:100%;">
+      </div>
+      <div class="slides">
+        <img src="images/5.jpg" style="width:100%;">
+      </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
 
   <!-- Category Choice -->
@@ -200,6 +211,6 @@
           </form>
     </div>
 
-    <script src="gallery.js"></script>
+    <script src="js/gallery.js"></script>
 </body>
 </html>
