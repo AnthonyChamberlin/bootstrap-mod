@@ -88,6 +88,12 @@ body {
   background-color: rgba(42, 146, 216, 0.69);
   transition: .5s; }
 
+.form-container {
+  margin-top: 150px; }
+
+.select-label {
+  color: #255fbc; }
+
 label > input {
   /* HIDE RADIO */
   visibility: hidden;

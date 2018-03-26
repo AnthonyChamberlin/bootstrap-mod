@@ -18,9 +18,30 @@
 
     <script src="https://use.fontawesome.com/8b0051f58e.js"></script>
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+
+  <!-- Interactive Gallery -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-8">
+        <div class="row">
+
+        </div>
+        <div class="row">
+          
+        </div>
+      </div>
+      <div class="col-xs-4">
+
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+
+  </div>
 
   <!-- Category Choice -->
   <div class="container">
@@ -87,13 +108,13 @@
     </div>
 
     <!-- Form incl. Submitting Material Choice -->
-    <div class="container">
+    <div class="container form-container">
         <h2 class="text-center">Have a question about this product?</h2>
         <h4 class="text-center">You can even select the material and colour of the product you'd like to ask us about!</h4>
         <form>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <h4>What material would you like?</h4>
+                    <h4 class="select-label">What material would you like?</h4>
                         <label>
                           <input type="radio" name="fb" value="small" />
                           <img src="https://powersolutions.org.uk/wp-content/uploads/2016/12/400x400-placeholder.png" style="width:70px;">
@@ -115,7 +136,7 @@
                         </label>
                   </div>
                   <div class="form-group col-md-6">
-                      <h4>What color would you like?</h4>
+                      <h4 class="select-label">What color would you like?</h4>
                         <label>
                             <input type="radio" name="fb" value="small" />
                             <img src="https://powersolutions.org.uk/wp-content/uploads/2016/12/400x400-placeholder.png" style="width:70px;">
@@ -146,6 +167,7 @@
                               <img src="https://powersolutions.org.uk/wp-content/uploads/2016/12/400x400-placeholder.png" style="width:70px;">
                             </label>
                     </div>
+                    
               <div class="form-group col-md-6">
                 <input type="text" class="form-control" placeholder="First Name">
               </div>
@@ -165,5 +187,7 @@
             <button type="submit" class="btn btn-primary">Send</button>
           </form>
     </div>
+
+    <script src="gallery.js"></script>
 </body>
 </html>
